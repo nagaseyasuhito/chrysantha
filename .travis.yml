@@ -3,5 +3,3 @@ jdk:
 - oraclejdk8
 script:
 - mvn verify beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment
-env:
-  secure: cKt0+OA/LZivlql9IiZvYVLMgf/+x0clwhiP0aKkYNkQSZLIiri8D8issfobLlxnH36CbDbpLLr3l5GF8SZD8N3zdPTZhzk8dJHKGOoKKd3j9O6LPy7Gd3hr+WsLveQwX3CUCvbkYRiSO5jBPmoYA2I74uSIpqAbRWLb2V5X1Ck=
