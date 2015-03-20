@@ -2,7 +2,6 @@ language: java
 jdk:
 - oraclejdk8
 before_script:
-- if [ "$TRAVIS_BRANCH" == "master"  ]; then MVN_GOAL="verify"; fi
-- if [ "$TRAVIS_BRANCH" == "release" ]; then MVN_GOAL="release:prepare release:perform"; fi
+- if [[ "$TRAVIS_TAG" ]]; then MVN_GOAL="release:prepare release:perform"; else MVN_GOAL="verify"; fi
 script:
 - mvn -B $MVN_GOAL
