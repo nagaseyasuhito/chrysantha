@@ -1,0 +1,8 @@
+language: java
+jdk:
+- oraclejdk8
+script:
+- mvn verify beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment
+env:
+- AWS_ACCESS_KEY_ID=AKIAI4BKHWAVKB2NL73Q
+- secure: 1ja4MasewPQmucePm6QiJiJI/FExYtL+lxmGfU23myWnWpY3zrriGtDj61dFjYpTx7kpL0DPysgS9NpADsDR5kuukYcRg5CHLlr5c8ONvyAuWNRnIYravB3f8sPkJOd1sSfifOHEvvtQOmXjRkLfuZaAmXn8xUSno+A+bsIH19o=
