@@ -34,6 +34,9 @@
 		<beanstalk.s3Bucket>${project.artifactId}</beanstalk.s3Bucket>
 		<beanstalk.s3Key>${project.build.finalName}.${project.packaging}</beanstalk.s3Key>
 		<beanstalk.multipartUpload>false</beanstalk.multipartUpload>
+
+		<tagNameFormat>@{project.version}</tagNameFormat>
+		<goals>package beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment</goals>
 	</properties>
 
 	<build>
@@ -51,12 +54,6 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-				<filtering>true</filtering>
-			</testResource>
-		</testResources>
 	</build>
 
 	<dependencies>
