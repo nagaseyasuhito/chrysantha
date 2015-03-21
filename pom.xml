@@ -18,7 +18,6 @@
 	<scm>
 		<url>https://github.com/nagaseyasuhito/chrysantha</url>
 		<connection>scm:git:git@github.com:nagaseyasuhito/chrysantha.git</connection>
-		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
