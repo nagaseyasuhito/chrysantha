@@ -36,7 +36,8 @@
 		<beanstalk.multipartUpload>false</beanstalk.multipartUpload>
 
 		<tagNameFormat>@{project.version}</tagNameFormat>
-		<goals>package beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment</goals>
+		<scmCommentPrefix>[maven-release-plugin][ci skip]</scmCommentPrefix>
+		<goals>package</goals>
 	</properties>
 
 	<build>
@@ -47,13 +48,6 @@
 				<version>1.4.0</version>
 			</plugin>
 		</plugins>
-
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
 	</build>
 
 	<dependencies>
