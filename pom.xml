@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.nagaseyasuhito</groupId>
 	<artifactId>chrysantha</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>war</packaging>
 
 	<issueManagement>
@@ -18,7 +18,8 @@
 	<scm>
 		<url>https://github.com/nagaseyasuhito/chrysantha</url>
 		<connection>scm:git:git@github.com:nagaseyasuhito/chrysantha.git</connection>
-	</scm>
+	  <tag>0.0.1</tag>
+  </scm>
 
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
