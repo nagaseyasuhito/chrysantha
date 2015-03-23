@@ -18,8 +18,7 @@
 	<scm>
 		<url>https://github.com/nagaseyasuhito/chrysantha</url>
 		<connection>scm:git:https://${env.GH_TOKEN}@github.com/nagaseyasuhito/chrysantha.git</connection>
-	  <tag>HEAD</tag>
-  </scm>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
