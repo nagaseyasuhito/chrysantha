@@ -1,6 +1,9 @@
 language: java
 jdk:
 - oraclejdk8
+cache:
+  directories:
+  - "$HOME/.m2"
 before_script:
 - if [ "$TRAVIS_BRANCH" == "master"  ]; then MVN_GOAL="verify"; fi
 - if [ "$TRAVIS_BRANCH" == "release" ]; then MVN_GOAL="release:prepare release:perform"; fi
