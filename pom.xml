@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.nagaseyasuhito</groupId>
 	<artifactId>chrysantha</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<issueManagement>
@@ -37,7 +37,7 @@
 
 		<tagNameFormat>@{project.version}</tagNameFormat>
 		<scmCommentPrefix>[maven-release-plugin][ci skip]</scmCommentPrefix>
-		<goals>package</goals>
+		<goals>package beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment</goals>
 	</properties>
 
 	<build>
