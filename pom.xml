@@ -37,7 +37,7 @@
 
 		<tagNameFormat>@{project.version}</tagNameFormat>
 		<scmCommentPrefix>[maven-release-plugin][ci skip]</scmCommentPrefix>
-		<goals>package</goals>
+		<goals>package beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:replace-environment</goals>
 	</properties>
 
 	<build>
